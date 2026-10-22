@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    color: #20251d;
+
+    background: #ffffff;
+
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: white;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #60752a;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: bold;
+
+}
+
+
+nav a:hover {
+
+    color: #60752a;
+
+}
+
+
+/* HERO */
+
+.hero {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #edf2df,
+            #ffffff
+        );
+
+}
+
+
+.hero-content {
+
+    max-width: 700px;
+
+}
+
+
+.tagline {
+
+    color: #60752a;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 65px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero h1 span {
+
+    color: #60752a;
+
+}
+
+
+.hero-content > p:not(.tagline) {
+
+    font-size: 19px;
+
+    color: #666;
+
+    margin-bottom: 30px;
+
+}
+
+
+.buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+.btn {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #60752a;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+
+.btn:hover {
+
+    background: #43521d;
+
+}
+
+
+.whatsapp {
+
+    background: #25D366;
+
+}
+
+
+/* SECTIONS */
+
+section:not(.hero) {
+
+    padding: 90px 8%;
+
+}
+
+
+.section-label {
+
+    color: #60752a;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+
+h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.about-text {
+
+    max-width: 750px;
+
+    font-size: 18px;
+
+    color: #666;
+
+}
+
+
+/* SERVICES */
+
+#services {
+
+    background: #f5f7f2;
+
+}
+
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-top: 40px;
+
+}
+
+
+.card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 1px solid #ddd;
+
+    transition: 0.3s;
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(0,0,0,0.1);
+
+}
+
+
+.icon {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.card h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.card p {
+
+    color: #666;
+
+}
+
+
+/* PRESCRIPTION */
+
+.prescription {
+
+    background: #60752a;
+
+    color: white;
+
+}
+
+
+.prescription .section-label {
+
+    color: #dce8b9;
+
+}
+
+
+.prescription p {
+
+    max-width: 650px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.prescription .btn {
+
+    background: white;
+
+    color: #60752a;
+
+}
+
+
+/* CONTACT */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-top: 40px;
+
+}
+
+
+.contact-card {
+
+    padding: 25px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+}
+
+
+.contact-card h3 {
+
+    margin-bottom: 12px;
+
+}
+
+
+.contact-card p {
+
+    color: #666;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    background: #182016;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+
+footer p {
+
+    color: #aaa;
+
+    margin-top: 8px;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .contact-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    nav {
+
+        gap: 12px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 45px;
+
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .buttons {
+
+        flex-direction: column;
+
+    }
+
+}

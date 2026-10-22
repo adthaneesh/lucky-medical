@@ -1,0 +1,1 @@
+console.log("Lucky Medical website loaded!");
